@@ -1,32 +1,42 @@
-# React + TypeScript + Vite
+# Class Assembly Landing Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A minimalist landing page for a school assembly invitation on **Digital Awareness**.
 
-Currently, two official plugins are available:
+## Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+This project is a single-page React application built to promote a class assembly. It features a compelling quote, smooth scroll animations, and clear event details to engage viewers and encourage participation.
 
-## React Compiler
+## Sections
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Hero** — Impactful quote with scroll-down indicator
+- **About** — Overview of the Digital Awareness theme
+- **Event Details** — Date, theme, time, and venue
+- **Presenters** — Class XH & XB
+- **RSVP** — Call-to-action buttons
+- **Contact** — Inquiry information
 
-## Expanding the Oxlint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
+- **React** + **TypeScript**
+- **Vite** (build tool)
+- **Tailwind CSS v4** (styling)
+- **Google Fonts** — Inter
 
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
+## Getting Started
+
+```bash
+npm install
+npm run dev
 ```
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+## Build
+
+```bash
+npm run build
+```
+
+Output is in `dist/`.
+
+## Deploy
+
+Deployed via Netlify.
